@@ -4,7 +4,7 @@
 
 # Give this script 10 mins to complete. If it fails half way through
 # or takes too long shut down the VM and don't waste money.
-shutdown -P +10
+
 
 # Some bits and bobs
 sudo sed -i 's/metadata.google.internal/metadata.google.internal metadata/' /etc/hosts
