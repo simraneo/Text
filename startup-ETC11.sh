@@ -1,11 +1,5 @@
 #!/bin/bash -x
 
-# IMPORTANT: Check out the WARNING below before changing this script. Seriously.
-
-# Give this script 10 mins to complete. If it fails half way through
-# or takes too long shut down the VM and don't waste money.
-
-
 # Some bits and bobs
 sudo sed -i 's/metadata.google.internal/metadata.google.internal metadata/' /etc/hosts
 systemctl disable --now google-c2d-startup.service  # Prevents GCP DeepLearning stuff from installing
